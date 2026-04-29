@@ -1,0 +1,629 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja">
+<head>
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+<meta name="robots" content="noindex,nofollow">
+<title>お気に入り</title></head>
+<body topmargin="0" leftmargin="3" bgcolor="555555" text="#CCCCCC" link="#000000" vlink="#000000" onload="initial();">
+	<meta name='viewport' content='width=device-width; initial-scale=1.0;'>
+<script type="text/javascript">
+var svhight=0;
+var fullstatus=0;
+function openImageByFullScreen(e) {
+if(fullstatus == 0){
+fullstatus=1;
+svhight=albhight;
+	var wsh=window.parent.screen.height;
+	albhight=wsh-35;
+	document.ppict.height = albhight;
+  if (e.requestFullscreen) {
+    e.requestFullscreen();
+  } else if (e.mozRequestFullScreen) { /* Firefox */
+    e.mozRequestFullScreen();
+  } else if (e.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+    e.webkitRequestFullscreen();
+  } else if (e.msRequestFullscreen) { /* IE/Edge */
+    e.msRequestFullscreen();
+  }
+}else{
+fullstatus=0;
+	albhight=svhight;
+	document.ppict.height = albhight;
+	document.exitFullscreen();
+	}
+}
+//-->
+</script>
+
+<style>
+#btn{
+	WIDTH: 38px; 
+	HEIGHT:	30px;
+	font-size:13px; 
+	padding: 0px; 
+	background-color:#337777; 
+	color:#EEEEEE; 
+	border:1px solid #444444;
+	border-radius: 3px;
+	-webkit-appearance: none;
+}
+#btn2{
+	WIDTH: 38px; 
+	HEIGHT:	30px;
+	font-size:13px; 
+	padding: 0px; 
+	background-color:#337777; 
+	color:#EEEEEE; 
+	border:1px solid #444444;
+	border-radius: 3px;
+	-webkit-appearance: none;
+}
+#btn3{
+	WIDTH: 28px; 
+	HEIGHT:	30px;
+	font-size:13px; 
+	padding: 0px; 
+	background-color:transparent; 
+	color:#CCCCCC; 
+	border:1px solid #777777;
+	border-radius: 3px;
+	-webkit-appearance: none;
+}
+#btn4{
+	WIDTH: 28px; 
+	HEIGHT:	30px;
+	font-size:13px; 
+	padding: 0px; 
+	background-color:#337777; 
+	color:#EEEEEE; 
+	border:1px solid #444444;
+	border-radius: 3px;
+	-webkit-appearance: none;
+}
+#btn10{
+	WIDTH: 28px; 
+	HEIGHT:	30px;
+	font-size:13px; 
+	padding: 0px; 
+	background-color:transparent; 
+	color:#CCCCCC; 
+	border:1px solid #777777;
+	border-radius: 3px;
+	-webkit-appearance: none;
+}
+	body { font-family :Arial }
+	.mozimg2  {
+	 filter:Alpha(opacity=25);/* IE用 */
+	opacity:0.25;/* FireFox、Chrome、Opera、Safari用 */
+	 }
+
+</style>
+
+<script type="text/javascript">
+<!--
+	var mxnmb=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+var gp1=['1,005,1026.JPG','1,005,1006.JPG','1,022,1005.JPG','3,022,IMGP1062.JPG','3,002,1006.JPG','3,002,1007.JPG','2,011,picts0403.JPG','3,002,1011.JPG','3,002,1005.JPG','3,002,1012.JPG','5,024,DSC01835.JPG','3,021,IMGP1015.JPG','3,021,IMGP1030.JPG','5,017,DSC00399.JPG','5,034,DSC03150.JPG','5,022,DSC01637.JPG','7,015,DSC05908.JPG','7,021,DSC06423.JPG','6,028,DSC07107.JPG','6,029,DSC_0089.JPG','7,026,DSC07229.JPG','7,032,DSC07721.JPG','7,027,DSC07302.JPG','7,027,DSC07388.JPG','7,001,DSC04086.JPG','7,032,DSC07713.JPG',];
+mxnmb[1]=26;
+var gp2=['0,001,1002.JPG','0,001,1007.JPG','0,001,1022.JPG','0,001,1034.JPG','0,002,1001.JPG','0,002,1004.JPG','0,002,1013.JPG','0,002,1034.JPG','0,003,1033.JPG','0,003,1042.JPG','1,001,1005.JPG','1,001,1015.JPG','1,002,1014.JPG','1,003,SAVE0042.JPG','1,005,1023.JPG','1,009,1008.JPG','1,010,1069.JPG','1,011,1015.JPG','1,013,1014.JPG','1,015,1049.JPG','1,016,1041.JPG','B,021,picts0184.JPG','2,001,1015.JPG','B,023,picts0407.JPG','B,025,picts0424.JPG','2,004,1022.JPG','2,005,1022.JPG','B,033,picts0274.JPG','2,006,1007.jpg','B,042,picts0437.jpg','2,008,1009.jpg','B,050,picts0309.jpg','2,011,picts0399.jpg','2,012,1011.jpg','B,065,Cus10053.jpg','2,013,IMGP0020.JPG','B,075,Phot0307.JPG','2,022,1005.JPG','B,089,Phot0190.JPG','2,024,1019.JPG','2,029,1052.JPG','3,007,1021.JPG','3,008,1031.JPG','3,009,1026.JPG','2,031,IMGP0470.JPG','2,032,IMGP1617.JPG','2,033,IMGP1879.JPG','3,019,IMGP0821.JPG','2,035,IMGP3087.JPG','3,029,SANY0520.JPG','2,037,IMGP1607.JPG','2,039,IMGP1798.JPG','5,002,DSC00293.JPG','5,005,DSC01232.JPG','5,013,DSC02654.JPG','5,033,DSC03059.JPG','7,002,DSC04297.JPG','7,006,DSC04807.JPG','7,011,DSC05492.JPG','7,019,DSC06282.JPG','7,023,DSC06888.JPG','6,028,DSC07106.JPG','6,029,DSC07162.JPG','7,030,DSC07627.JPG','7,036,20240910_192002.JPG','7,037,20250227_164725.JPG',];
+mxnmb[2]=66;
+var gp3=['1,001,1013.JPG','1,002,1015.JPG','1,003,SAVE0042.JPG','1,005,1013.JPG','1,009,1005.JPG','1,010,1058.JPG','1,012,1014.JPG','1,013,1012.JPG','1,015,1012.JPG','1,018,1009.JPG','1,019,1023.JPG','1,020,1003.JPG','2,006,1005.jpg','1,021,1006.JPG','3,001,1014.JPG','2,013,IMGP0035.JPG','2,018,IMGP0038.JPG','2,022,1008.JPG','2,029,1009.JPG','3,004,1002.JPG','2,030,1006.JPG','3,005,1011.JPG','2,031,IMGP0428.JPG','3,013,IMGP1486.JPG','3,017,IMGP0641.JPG','3,016,1029.JPG','3,026,IMGP1227.JPG','3,021,IMGP1031.JPG','3,035,IMGP1743.JPG','7,015,DSC05908.JPG','7,023,DSC06858.JPG','6,028,DSC07107.JPG','6,029,DSC_0089.JPG','7,026,DSC07229.JPG','7,032,DSC07721.JPG',];
+mxnmb[3]=35;
+var gp4=['1,005,1007.JPG','1,009,1004.JPG','1,010,1014.JPG','1,012,1005.JPG','1,013,1006.JPG','1,014,1011.JPG','1,015,1015.JPG','1,016,1023.JPG','1,017,1037.JPG','1,018,1005.JPG','1,019,1028.JPG','1,020,1017.JPG','1,021,1043.JPG','1,022,1004.JPG','2,011,picts0403.JPG','3,004,1003.JPG','3,005,Miho29.JPG','3,008,1015.JPG','3,009,1025.JPG','3,010,1015.JPG','3,011,1051.JPG','3,014,1032.JPG','3,016,1025.JPG','3,018,IMGP0743.JPG','3,020,1018.JPG','3,028,1011.JPG',];
+mxnmb[4]=26;
+var gp5=['B,001,Photc014.JPG','B,001,Photc115.JPG','B,006,SAVE0138.JPG','1,007,1022.JPG','1,010,1037.JPG','1,015,1005.JPG','1,016,1035.JPG','B,020,picts0047.JPG','B,028,picts0328.JPG','B,030,picts0122.JPG','B,035,picts0136.JPG','B,040,picts0104.JPG','B,045,picts0141.JPG','1,021,1001.JPG','2,011,picts0398.JPG','3,002,1002.JPG','D,007,99627008.JPG','2,017,IMGP0005.JPG','A,001,HAHA02.JPG','A,016,00502003.JPG','3,004,1023.JPG','A,043,01911009.JPG','D,002,Miho34.JPG','3,007,1011.JPG','A,057,03B14002.JPG','E,004,IMGP0310.JPG','E,024,IMGP1039.JPG','E,044,IMGP1691.JPG','E,066,IMGP2527.JPG','E,080,IMGP0316.JPG','E,088,IMGP0468.JPG','3,016,1057.JPG',];
+mxnmb[5]=32;
+var gp6=['B,003,Dance005.JPG','B,005,SAVE0071.JPG','B,008,picts0044-2.JPG','B,011,picts0051.JPG','B,012,picts0032.JPG','B,015,picts0059.JPG','B,016,picts0117.JPG','B,017,picts0053.JPG','B,021,picts0180.JPG','B,022,picts0295.JPG','B,024,picts0075.JPG','B,030,picts0113.JPG','B,039,picts0153.JPG','B,045,picts0161.JPG','B,051,picts0162.JPG','B,052,picts0046.JPG','B,064,picts0225.JPG','B,074,Phot0143.JPG','B,079,Phot0286.JPG','B,088,Phot0114.JPG','B,090,Phot0243.JPG','B,092,Phot0311.JPG','B,095,Phot0212.JPG','B,098,Phot0268.JPG','B,099,1018.JPG','B,103,1031.JPG','E,003,IMGP0087.JPG','E,008,IMGP0327.JPG','3,011,1064.jpg','3,019,IMGP0821-3.jpg','3,028,1001.JPG','3,040,CIMG0238.JPG','4,003,CIMG0480.JPG','4,009,CIMG0601.JPG','4,014,DSC00769.JPG','4,029,DSC02894.JPG','4,038,DSC03395.JPG','6,003,DSC03846.JPG','6,018,DSC04711.JPG','6,025,DJI_0513.JPG',];
+mxnmb[6]=40;
+var gp7=['0,001,1002.JPG','0,001,1003.JPG','0,001,1005.JPG','A,016,00502005.JPG','A,016,00502006.JPG','A,016,00502007.JPG','A,016,00502008.JPG','0,001,1007.JPG','0,001,1014.JPG','0,001,1008.JPG','0,001,1013.JPG','0,001,1015.JPG','0,001,1011.JPG','0,001,1016.JPG','B,001,photc007-1.JPG','0,001,1004.JPG','0,001,1006.JPG','0,001,1009.JPG','0,001,1010.JPG','0,001,1012.JPG','0,001,1021.JPG','0,001,1024.JPG','0,001,1025.JPG','0,001,1032.JPG','6,012,DSC04330.JPG','6,012,DSC04331.JPG','6,012,DSC04332.JPG','6,012,DSC04333.JPG','6,012,DSC04334.JPG','6,012,DSC04335.JPG','6,012,DSC04336.JPG','6,012,DSC04337.JPG','6,012,DSC04338.JPG',];
+mxnmb[7]=33;
+var gp8=['4,006,IMGP2270.JPG','4,012,DSC00205.JPG','4,020,DSC02144.JPG','4,022,DSC02271.JPG','4,023,DSC02357.JPG','4,024,DSC02476.JPG','4,030,DSC02969.JPG','4,040,DSC03716.JPG','6,001,DSC03804.JPG','6,001,EDSC_0173.JPG','6,006,DSC03962.JPG','6,008,DSC04151.JPG','6,013,DSC04380.JPG','6,017,DSC04644.JPG','6,019,DSC05982.JPG','6,021,DSC06743.JPG','6,022,DSC06791.JPG','6,023,DSC06812.JPG','6,027,DSC07063.JPG','6,028,DSC07114.JPG','6,029,DSC07167.JPG','6,031,DSC07453.JPG','6,031,DSC07491.JPG',];
+mxnmb[8]=23;
+var gp9=['2,037,IMGP1589.JPG','5,002,DSC00312.JPG','5,004,DSC00584.JPG','5,005,DSC01265.JPG','5,006,DSC01338.JPG','5,007,DSC01462.JPG','5,009,DSC01703.JPG','5,011,DSC01957.JPG','5,012,DSC02547.JPG','5,015,DSC00237.JPG','5,017,DSC00398.JPG','5,020,DSC01454.JPG','5,021,DSC01530.JPG','5,022,DSC01637.JPG','5,023,DSC01749.JPG','5,025,DSC02184.JPG','5,028,DSC02492.JPG','5,030,DSC02746.JPG','5,034,DSC03150.JPG','5,033,DSC03062.JPG','5,035,DSC03276.JPG','5,037,DSC03440.JPG','7,002,DSC04270.JPG','7,004,DSC04494.JPG','7,006,DSC04751.JPG','7,009,DSC05046.JPG','7,011,DSC05467.JPG','7,012,DSC05610.JPG','7,014,DSC05821.JPG','7,017,DSC06048.JPG','7,019,DSC06203.JPG','7,030,DSC07614.JPG','7,032,DSC07736.JPG',];
+mxnmb[9]=33;
+var gp10=['5,031,DSC02770.JPG','7,026,DSC07214.JPG','7,026,DSC07216.JPG',];
+mxnmb[10]=3;
+var gp11=['5,031,DSC02770.JPG',];
+mxnmb[11]=1;
+var gp12=['5,031,DSC02770.JPG',];
+mxnmb[12]=1;
+var gp13=['5,031,DSC02770.JPG','5,031,DSC02770.JPG',];
+mxnmb[13]=2;
+var gp14=['5,031,DSC02770.JPG',];
+mxnmb[14]=1;
+var gp15=['5,031,DSC02770.JPG',];
+mxnmb[15]=1;
+var mtl=['1. お気に入りテスト','2. 大原英男半世紀の変化','3. 富美子半世紀の変化','4. 美帆誕生からの写真','5. 岡山父母の写真','6. 南禅寺父母の写真','7. 英男子供の頃の写真集','8. ベストショット 国内','9. ベストショット 海外','!0. 予備１','11. 予備２',];
+var gpt1=['1972/11 美帆0歳1 ','1972/11 美帆0歳1 ','1990 90年代前2 ','2008/06 瀬戸大橋 ','1995/03 幾末銀閣寺 ','1995/03 幾末銀閣寺 ','1992/03 香港旅行 ','1995/03 幾末銀閣寺 ','1995/03 幾末銀閣寺 ','1995/03 幾末銀閣寺 ','2014/09 北海道ク～ / コルサコフ札幌','2008/06 平安神宮 ','2008/06 平安神宮 ','2014/05 沖縄ク～ / 石垣島','2015/07 中欧 チェスキークル・プラハ','2014/09 北海道ク～ / 室蘭釧路','2019/01 ハワイ旅行 2/2','2019/05 イタリア Roma 5/5','2021/06 美樹結婚式','2022/03 結婚50周年・祇園花見','2023/02 ハワイ旅行 1/2','2024/02 ハワイ旅行','2023/02 ハワイ旅行 2/2','2023/02 ハワイ旅行 2/2','2016/10 スイス・ドイツ旅行 1/3','2024/02 ハワイ旅行',];
+var gpt2=['1970 年以前1 ','1970 年以前1 ','1970 年以前1 ','1970 年以前1 ','1970 年以前2 ','1970 年以前2 ','1970 年以前2 ','1970 年以前2 ','1970 年以前3 ','1970 年以前3 ','1971 結婚前 ','1971 結婚前 ','1971 結婚前後 ','1972/03 結婚式','1972/11 美帆0歳1 ','1973 美帆1歳 ','1974 美帆2歳1 ','1974 美帆2歳2 ','1977 美帆幼稚園 ','1979 美帆小学生2 ','1979 美帆小学生3 ','1981 貞雄結婚式','1982/04 ハンブルグ出張','1983 香港','1984 シンガポール','1985/02 ミネアポリス留学 ','1986/06 米国出張','1987 トＷＰレーニング','1988/08 ハワイ旅行 ','1989 デーﾗｰ訪問','1990/09 南米出張 ','1991 ロンドン','1992/03 香港旅行 ','1993/05 オスロ出張','1994 上海出張','1995/04 ハンブルグ駐在 1 ','1996 07 パリからドイツへ２','1997/10 上海駐在 1 ','1998 南京会長来','1999/07 デンバー駐在 1','2000/09 カナダ旅行','2001/12 東京勤務 2 x','2002/09 聖太郎誕生 x','2003/01 写真サマリー x','2004/06 ケアンズ旅行','2005/11 上海旅行 ','2006/02 台北旅行 ','2007/10 還暦祝い ','2008/05 上海旅行 ','2009/08 ミシガン乗船','2010/04 北京ツアー','2011/05 瀋陽大連ツアー','2012/11 フランス・パリ旅行 ','2013/07 地中海クルーズ','2014/01 シンガポ～ / 3日目 ','2015/07 中欧 ウイン・チェスキークル','2016/10 スイス・ドイツ旅行 2/3','2017/07 スイス旅行 3/4','2018/07 バルト三国旅行 1/3','2019/05 イタリア Fir-Nap 3/5','2020/01 ハワイ旅行 1/2','2021/06 美樹結婚式','2022/03 結婚50周年・祇園花見','2023/10 スペイン旅行 2/2','2024/09 ギリシャ旅行 3/3','2025/02 ハワイ旅行',];
+var gpt3=['1971 結婚前 ','1971 結婚前後 ','1972/03 結婚式','1972/11 美帆0歳1 ','1973 美帆1歳 ','1974 美帆2歳1 ','1976 美帆4歳 ','1977 美帆幼稚園 ','1979 美帆小学生2 ','1983 美帆中学前後 ','1985 美帆中学生 ','1988 美帆高校生 ','1988/08 ハワイ旅行 ','1990 90年代前1 ','1993/07 上高地旅行 ','1995/04 ハンブルグ駐在 1 ','1996/12 エジプト旅行 ','1997/10 上海駐在 1 ','2000/09 カナダ旅行','2000/10 ちぼり公園旅行  ','2001/09 ラスベガス旅行 ','2001/02 結納衣装結婚式 △','2004/06 ケアンズ旅行','2005/09 東尋坊旅行 ','2007/08 嵐山トロッコ ','2007 写真サマリー x','2008/10 琵琶湖 ','2008/06 平安神宮 ','2010/11 大徳寺紅葉 ','2019/01 ハワイ旅行 2/2','2020/01 ハワイ旅行 1/2','2021/06 美樹結婚式','2022/03 結婚50周年・祇園花見','2023/02 ハワイ旅行 1/2','2024/02 ハワイ旅行',];
+var gpt4=['1972/11 美帆0歳1 ','1973 美帆1歳 ','1974 美帆2歳1 ','1976 美帆4歳 ','1977 美帆幼稚園 ','1979 美帆小学生1 ','1979 美帆小学生2 ','1979 美帆小学生3 ','1979 美帆小学生4 ','1983 美帆中学前後 ','1985 美帆中学生 ','1988 美帆高校生 ','1990 90年代前1 ','1990 90年代前2 ','1992/03 香港旅行 ','2000/10 ちぼり公園旅行  ','2001/02 結納衣装結婚式 △','2002/09 聖太郎誕生 x','2003/01 写真サマリー x','2004/04 写真サマリー x','2005/01 写真サマリー x','2006/12 写真サマリー x','2007 写真サマリー x','2007/08 淡路島旅行 ','2008 写真サマリー x','2009/03 正太郎・智行 x',];
+var gpt5=['1970 以前の古い写真','1970 以前の古い写真','1972 結婚披露宴','1972 美帆0歳3 ','1974 美帆2歳1 ','1979 美帆小学生2 ','1979 美帆小学生3 ','1979 美帆小学生低学年','1985 ミネアポリス','1985 美帆中学生','1988','1988 美帆高校生','1990','1990 90年代前1 ','1992/03 香港旅行 ','1995/03 幾末銀閣寺 ','1999 山科ハイツ他バラ','1996/07 家族ドイツ ','1997/04~ 中国1','2000/02 岡山','2000/10 ちぼり公園旅行  ','2001/09 児島','2002/06 美帆結婚式','2001/12 東京勤務 2 x','2003/11 竜安寺','2004/05 一見新居','2005/05 岡山','2005/11 倉敷','2006/11 牛窓','2007/04 岡山','2007/06 十七回忌','2007 写真サマリー x',];
+var gpt6=['1971 結婚前１','1972 結婚式','1972 美帆０歳','1973 美帆１歳まで','1974 美帆２歳','1976 美帆４歳','1977 美帆幼稚園','1979 美帆小学生３','1981 貞雄結婚式','1982 ハノーバフェアー','1983 美帆小学校から中学校','1985 美帆中学生','1988 学園祭','1990','1991 不二家','1992','1994','1996 07 パリからドイツへ','1996  美帆','1998 ','1999 ','2000 ','2001 ','2002 ','2002 聖太郎誕生','2003 聖太郎','2004/04 聖太郎4月','2004/06 聖太郎6月','2005/01 写真サマリー x','2007/10 還暦祝い ','2009/03 正太郎・智行 x','2011/06 大津プリンスホテル','2012/01 八坂・岡山・誕生日 ','2012/08 京都ブライトンホテル','2013/01 正月(ホテル）','2014/04 聖太郎智行来家','2015/04 カニ屋・智行背広','2016/01 正月','2019/01 正月','2020/01 お正月',];
+var gpt7=['1970 年以前1 ','1970 年以前1 ','1970 年以前1 ','2000/02 岡山','2000/02 岡山','2000/02 岡山','2000/02 岡山','1970 年以前1 ','1970 年以前1 ','1970 年以前1 ','1970 年以前1 ','1970 年以前1 ','1970 年以前1 ','1970 年以前1 ','1970 以前の古い写真','1970 年以前1 ','1970 年以前1 ','1970 年以前1 ','1970 年以前1 ','1970 年以前1 ','1970 年以前1 ','1970 年以前1 ','1970 年以前1 ','1970 年以前1 ','2016/11 日吉大社・有馬温泉','2016/11 日吉大社・有馬温泉','2016/11 日吉大社・有馬温泉','2016/11 日吉大社・有馬温泉','2016/11 日吉大社・有馬温泉','2016/11 日吉大社・有馬温泉','2016/11 日吉大社・有馬温泉','2016/11 日吉大社・有馬温泉','2016/11 日吉大社・有馬温泉',];
+var gpt8=['2012/05 伊勢志摩 ','2012/09 京都清水寺','2013/09 大原三千院','2013/10 LALA御殿場','2013/11 せとうち児島ホテル','2013/12 神戸メリケン・髙橋さん','2014/04 岡崎平安神宮庭','2015/09 メナード青山・鳥羽','2015/11 比叡山延紅葉・植物園','2015/11 比叡山延紅葉・植物園','2016/06 京都南禅寺','2016/07 上七軒ビヤガーデン','2016/11 八坂高台寺周辺','2018/11 倉敷','2019/03 祇園花見','2019/11 黒部立山アルペン','2019/11 永観堂紅葉','2019/12 南禅寺紅葉','2021/03 第49回結婚記念日','2021/06 美樹結婚式','2022/03 結婚50周年・祇園花見','2023/04 東京旅行','2023/04 東京旅行',];
+var gpt9=['2010/04 北京ツアー','2012/11 フランス・パリ旅行 ','2012/11 フランス～ / 5-6日目 ','2013/07 地中海クルーズ','2013/07 地中～ / バーリ ','2013/07 地中～ / オリンピア','2013/07 地中～ / イスタン～ ','2013/07 地中～ / ベネチア ','2014/01 シンガポール旅行','2014/05 沖縄ク～ / 奄美大島','2014/05 沖縄ク～ / 石垣島','2014/09 北海道クルーズ伊丹小樽','2014/09 北海道ク～ / 函館','2014/09 北海道ク～ / 室蘭釧路','2014/09 北海道ク～ / 知床網走','2015/02 ベトナムハノイ 1/2','2015/05 長崎クルーズ2/3 航海長崎','2015/07 中欧 ブタペスト','2015/07 中欧 チェスキークル・プラハ','2015/07 中欧 ウイン・チェスキークル','2015/11 中国桂林旅行 1/2','2016/03 クイーンエリザベス 1/3','2016/10 スイス・ドイツ旅行 2/3','2017/07 スイス旅行 1/4','2017/07 スイス旅行 3/4','2018/03 ハワイ家族旅行 2/3','2018/07 バルト三国旅行 1/3','2018/07 バルト三国旅行 2/3','2019/01 ハワイ旅行 1/2','2019/05 イタリア Mil-Ven 1/5','2019/05 イタリア Fir-Nap 3/5','2023/10 スペイン旅行 2/2','2024/02 ハワイ旅行',];
+var gpt10=['2015/07 中欧 プラチナラバ・ウイーン','2023/02 ハワイ旅行 1/2','2023/02 ハワイ旅行 1/2',];
+var gpt11=['2015/07 中欧 プラチナラバ・ウイーン',];
+var gpt12=['2015/07 中欧 プラチナラバ・ウイーン',];
+var gpt13=['2015/07 中欧 プラチナラバ・ウイーン','2015/07 中欧 プラチナラバ・ウイーン',];
+var gpt14=['2015/07 中欧 プラチナラバ・ウイーン',];
+var gpt15=['2015/07 中欧 プラチナラバ・ウイーン',];
+	var myurlh="./PCT";
+	var myurl="./PCTM";
+	var myurlo="./PCTO";
+	var i=0;
+	var nmb=0;
+	var autost=0;
+	var albhight=220;
+	var siz = "+2";
+	var hqty=0;
+/////////////////////////////////////////
+	function initial(){
+	albhight=document.documentElement.clientWidth;
+	albhight=(albhight/1.5)-60;
+	albhight=Math.round(albhight);
+	mselect(2);
+	sizeset();
+	menu(); // no menu items
+	window.setTimeout(auto, 5000);
+}
+//
+	function mselect(nm){
+if(dlist == 0){
+	nmb=nm;
+	i=0;
+	if(nmb == 1){var temp=gp1[i];var temp2=gpt1[i];}
+	if(nmb == 2){var temp=gp2[i];var temp2=gpt2[i];}
+	if(nmb == 3){var temp=gp3[i];var temp2=gpt3[i];}
+	if(nmb == 4){var temp=gp4[i];var temp2=gpt4[i];}
+	if(nmb == 5){var temp=gp5[i];var temp2=gpt5[i];}
+	if(nmb == 6){var temp=gp6[i];var temp2=gpt6[i];}
+	if(nmb == 7){var temp=gp7[i];var temp2=gpt7[i];}
+	if(nmb == 8){var temp=gp8[i];var temp2=gpt8[i];}
+	if(nmb == 9){var temp=gp9[i];var temp2=gpt9[i];}
+	if(nmb == 10){var temp=gp10[i];var temp2=gpt10[i];}
+	if(nmb == 11){var temp=gp11[i];var temp2=gpt11[i];}
+	var ary= temp.split(',');
+	argp=ary[0];
+	arnb=ary[1];
+	arfl=ary[2];
+	qtset();
+//	document.getElementById("ppict").src =myurl+'/GRP'+argp+'/'+arnb+'/'+arfl;
+	document.getElementById("bango").innerHTML =i+1;
+	document.getElementById("banmax").innerHTML ="<font size=-1>"+mxnmb[nmb]+"</Font>";
+//	document.getElementById("mtl").innerHTML ="<font size=+0 color='#DDDDFF'><B>"+mtl[nmb-1]+"</B></Font>";
+	document.getElementById("mfn").innerHTML ="<font size=-1 color='#AAAAAA'>"+'GRP'+argp+'/'+arnb+'/'+arfl+"</Font>";
+	var ccnt=1;
+	while(ccnt < 12){
+	document.getElementById(ccnt).style.backgroundColor ="#555555";
+	ccnt=ccnt+1;
+	}
+	document.getElementById(nmb).style.backgroundColor ="#AA0000";
+	}
+//
+	var yr=temp2.substring(2,4);
+	yr=+yr;
+	var yrt=temp2.substring(0,2);
+	var age=0;
+	if(yrt == '20'){age= yr + 52;}else{age= yr - 47;}
+	document.getElementById("mtl").innerHTML ="<font size=+0 color='#AAFFAA'><B>"+temp2+" / <font color='#FFFFFF'>"+age+"才</B></Font></Font>";
+
+}
+/////////////////////////////////////////
+//　次へ
+	function next(){
+	i++;
+//	if(i > mxnmb[nmb] -1){i = mxnmb[nmb]-1;}
+	if(i > mxnmb[nmb] -1){i = 0;}
+	if(nmb == 1){var temp=gp1[i];var temp2=gpt1[i];}
+	if(nmb == 2){var temp=gp2[i];var temp2=gpt2[i];}
+	if(nmb == 3){var temp=gp3[i];var temp2=gpt3[i];}
+	if(nmb == 4){var temp=gp4[i];var temp2=gpt4[i];}
+	if(nmb == 5){var temp=gp5[i];var temp2=gpt5[i];}
+	if(nmb == 6){var temp=gp6[i];var temp2=gpt6[i];}
+	if(nmb == 7){var temp=gp7[i];var temp2=gpt7[i];}
+	if(nmb == 8){var temp=gp8[i];var temp2=gpt8[i];}
+	if(nmb == 9){var temp=gp9[i];var temp2=gpt9[i];}
+	if(nmb == 10){var temp=gp10[i];var temp2=gpt10[i];}
+	if(nmb == 11){var temp=gp11[i];var temp2=gpt11[i];}
+	var ary= temp.split(',');
+	argp=ary[0];
+	arnb=ary[1];
+	arfl=ary[2];
+	qtset();
+//	document.getElementById("ppict").src =myurl+'/GRP'+argp+'/'+arnb+'/'+arfl;
+	document.getElementById("bango").innerHTML =i+1;
+	document.getElementById("mfn").innerHTML ="<font size=-1 color='#AAAAAA'>"+'GRP'+argp+'/'+arnb+'/'+arfl+"</Font>";
+     		document.getElementById("dctrl1").style.display = "none";
+     		document.getElementById("dctrl2").style.display = "";
+	var yr=temp2.substring(2,4);
+	yr=+yr;
+	var yrt=temp2.substring(0,2);
+	var age=0;
+	if(yrt == '20'){age= yr + 52;}else{age= yr - 47;}
+	document.getElementById("mtl").innerHTML ="<font size=+0 color='#AAFFAA'><B>"+temp2+" / <font color='#FFFFFF'>"+age+"才</B></Font></Font>";
+	dlist=0;
+
+	}
+//
+//　前へ
+	function back(){
+	i--;
+	if(i < 0){i=0;}
+	if(nmb == 1){var temp=gp1[i];var temp2=gpt1[i];}
+	if(nmb == 2){var temp=gp2[i];var temp2=gpt2[i];}
+	if(nmb == 3){var temp=gp3[i];var temp2=gpt3[i];}
+	if(nmb == 4){var temp=gp4[i];var temp2=gpt4[i];}
+	if(nmb == 5){var temp=gp5[i];var temp2=gpt5[i];}
+	if(nmb == 6){var temp=gp6[i];var temp2=gpt6[i];}
+	if(nmb == 7){var temp=gp7[i];var temp2=gpt7[i];}
+	if(nmb == 8){var temp=gp8[i];var temp2=gpt8[i];}
+	if(nmb == 9){var temp=gp9[i];var temp2=gpt9[i];}
+	if(nmb == 10){var temp=gp10[i];var temp2=gpt10[i];}
+	if(nmb == 11){var temp=gp11[i];var temp2=gpt11[i];}
+	var ary= temp.split(',');
+	argp=ary[0];
+	arnb=ary[1];
+	arfl=ary[2];
+	qtset();
+//	document.getElementById("ppict").src =myurl+'/GRP'+argp+'/'+arnb+'/'+arfl;
+	document.getElementById("bango").innerHTML =i+1;
+	document.getElementById("mfn").innerHTML ="<font size=-1 color='#AAAAAA'>"+'GRP'+argp+'/'+arnb+'/'+arfl+"</Font>";
+	var yr=temp2.substring(2,4);
+	yr=+yr;
+	var yrt=temp2.substring(0,2);
+	var age=0;
+	if(yrt == '20'){age= yr + 52;}else{age= yr - 47;}
+	document.getElementById("mtl").innerHTML ="<font size=+0 color='#AAFFAA'><B>"+temp2+" / <font color='#FFFFFF'>"+age+"才</B></Font></Font>";
+	}
+//
+//
+// 自動開始・停止 （スライド開始）
+function auto() {
+	if(autost == 0){
+	autost=1;
+	next();
+	read = setInterval("next();time=0;",5000);
+	document.getElementById("btn2").style.color ="#FF7777";
+time=0;
+display();
+	}else{
+ 	clearInterval(read);
+	clearTimeout(tid);
+       document.getElementById("tm5").innerHTML ="<font size=-1>-</Font>";
+	autost=0;
+	document.getElementById("btn2").style.color ="#EEEEEE";
+	}	
+}
+//
+// 写真サイズ拡大
+function bigsize() {
+	albhight=albhight+100;
+	if(albhight > 1090){
+	albhight=1090;
+	}
+	document.getElementById("ppict").height =albhight;
+	document.getElementById("hsize").innerHTML = "<font size=-1 color='#DDDDDD'>"+albhight+"</Font>";
+}
+//
+// 写真サイズ縮小
+function smlsize() {
+	albhight=albhight-50;
+	if(albhight < 170){
+	albhight=170;
+	}
+	document.getElementById("ppict").height =albhight;
+	document.getElementById("hsize").innerHTML = "<font size=-1 color='#DDDDDD'>"+albhight+"</Font>";
+}
+//
+// 写真サイズ指定
+function sizeset() {
+	albhight=albhight;
+	document.getElementById("ppict").height =albhight;
+	document.getElementById("hsize").innerHTML = "<font size=-1 color='#DDDDDD'>"+albhight+"</Font>";
+}
+
+//
+// 一覧侮ｦ （未使用）
+function disp () {
+	document.write ("<center><font size=-1 color='#DDDDDD'>写真一覧</Font><BR>");
+	i=0;	
+	while(i < mxnmb[nmb]){
+	if(nmb == 1){var temp=gp1[i];}
+	if(nmb == 2){var temp=gp2[i];}
+	if(nmb == 3){var temp=gp3[i];}
+	if(nmb == 4){var temp=gp4[i];}
+	if(nmb == 5){var temp=gp5[i];}
+	if(nmb == 6){var temp=gp6[i];}
+	if(nmb == 7){var temp=gp7[i];}
+	if(nmb == 8){var temp=gp8[i];}
+	if(nmb == 9){var temp=gp9[i];}
+	if(nmb == 10){var temp=gp10[i];}
+	if(nmb == 11){var temp=gp11[i];}
+	var ary= temp.split(',');
+	argp=ary[0];
+	arnb=ary[1];
+	arfl=ary[2];
+	document.write ("<img src=./PCTO/GRP"+argp+"/"+arnb+"/"+arfl+" height=80>");
+	i=i+1;
+	}
+	document.body.style.backgroundColor = "#555555";
+	document.write ("<BR><BR><font size=-1>[<a href='./albPref.cgi'><font color='#DDDDDD'>戻る</Font></a>]</Font></center><BR>");
+}
+//
+//
+	var dlist=0;
+//　一覧侮ｦ
+function disp36(){
+	if(dlist == 0){
+     	document.getElementById("dctrl1").style.display = "";
+    	document.getElementById("dctrl2").style.display = "none";
+	i=0;
+	var anmb=i+1; 
+	while(anmb < mxnmb[nmb] +1){
+	if(nmb == 1){var temp=gp1[i];var temp2=gpt1[i];}
+	if(nmb == 2){var temp=gp2[i];var temp2=gpt2[i];}
+	if(nmb == 3){var temp=gp3[i];var temp2=gpt3[i];}
+	if(nmb == 4){var temp=gp4[i];var temp2=gpt4[i];}
+	if(nmb == 5){var temp=gp5[i];var temp2=gpt5[i];}
+	if(nmb == 6){var temp=gp6[i];var temp2=gpt6[i];}
+	if(nmb == 7){var temp=gp7[i];var temp2=gpt7[i];}
+	if(nmb == 8){var temp=gp8[i];var temp2=gpt8[i];}
+	if(nmb == 9){var temp=gp9[i];var temp2=gpt9[i];}
+	if(nmb == 10){var temp=gp10[i];var temp2=gpt10[i];}
+	if(nmb == 11){var temp=gp11[i];var temp2=gpt11[i];}
+		var ary= temp.split(',');
+		argp=ary[0];
+		arnb=ary[1];
+		arfl=ary[2];
+
+		document.getElementById("Ga"+anmb).src ="./PCTO/GRP"+argp+"/"+arnb+"/"+arfl;	
+		document.getElementById("Ga"+anmb).height = (albhight/200)*36;
+		document.getElementById("Ga"+anmb).width = (albhight/200)*36*1.36;
+		i=i+1;
+		anmb=anmb+1;
+	   }
+	schgRm(mxnmb[nmb]+1); // 残りを小さく侮ｦ
+	i=-1;
+	dlist=1;
+	}else{ // dlist 1
+	next();
+	dlist=0;
+	}
+///////////////////////////
+}
+//
+// // 残りを極小侮ｦのため
+function schgRm(pnt){
+	while(pnt < 73){	
+	document.getElementById("Ga"+pnt).height = 1;
+	document.getElementById("Ga"+pnt).width = 1;
+	pnt=pnt+1;
+	}
+}
+//
+// pressed picture display
+function bdisp(bbb){
+	i=bbb;
+	if(nmb == 1){var temp=gp1[i];var temp2=gpt1[i];}
+	if(nmb == 2){var temp=gp2[i];var temp2=gpt2[i];}
+	if(nmb == 3){var temp=gp3[i];var temp2=gpt3[i];}
+	if(nmb == 4){var temp=gp4[i];var temp2=gpt4[i];}
+	if(nmb == 5){var temp=gp5[i];var temp2=gpt5[i];}
+	if(nmb == 6){var temp=gp6[i];var temp2=gpt6[i];}
+	if(nmb == 7){var temp=gp7[i];var temp2=gpt7[i];}
+	if(nmb == 8){var temp=gp8[i];var temp2=gpt8[i];}
+	if(nmb == 9){var temp=gp9[i];var temp2=gpt9[i];}
+	if(nmb == 10){var temp=gp10[i];var temp2=gpt10[i];}
+	if(nmb == 11){var temp=gp11[i];var temp2=gpt11[i];}
+		var ary= temp.split(',');
+		argp=ary[0];
+		arnb=ary[1];
+		arfl=ary[2];
+		qtset();
+//		document.getElementById("ppict").src ="./PCTM/GRP"+argp+"/"+arnb+"/"+arfl;
+     		document.getElementById("dctrl1").style.display = "none";
+     		document.getElementById("dctrl2").style.display = "";
+//		document.getElementById("mtl").innerHTML =i+1;
+		document.getElementById("mfn").innerHTML ="<font size=-1 color='#AAAAAA'>"+'GRP'+argp+'/'+arnb+'/'+arfl+"</Font>";
+	document.getElementById("mtl").innerHTML ="<font size=+0 color='#AAFFAA'><B>"+temp2+"</B></Font>";
+//
+	var yr=temp2.substring(2,4);
+	yr=+yr;
+	var yrt=temp2.substring(0,2);
+	var age=0;
+	if(yrt == '20'){age= yr + 52;}else{age= yr - 47;}
+	document.getElementById("mtl").innerHTML ="<font size=+0 color='#AAFFAA'><B>"+temp2+" / <font color='#FFFFFF'>"+age+"才</B></Font></Font>";
+		dlist=0;
+}	
+//
+//
+	var chgm=0;
+	function menu(){
+	if(chgm == 0){
+    		document.getElementById("dctrl3").style.display = "none";
+		chgm=1;
+		}else{
+    		document.getElementById("dctrl3").style.display = "";
+		chgm=0;
+	    }
+}
+//
+//
+// Count down
+	var time=0;
+	function display()  {
+        document.getElementById("tm5").innerHTML ="<font color='#99FF99' size=-1>"+time+"</Font>";
+	time=time+1; 
+        tid = setTimeout('display()', 1000)
+}
+//
+//
+// 画質切替
+function qtychgb() {
+	var hqtmp="";
+	if(hqty == 0){
+	hqtmp=1;
+	}
+	if(hqty == 1){	
+	hqtmp=2;
+	}
+	if(hqty == 2){	
+	hqtmp=0;
+	}
+	hqty=hqtmp;
+	qtset();
+}
+//
+// 画質設定
+//var durl="";
+function qtset(){
+//	strtm = new Date();
+//	document.getElementById("rdtime").innerHTML =' <font color=#DDDDDD>読込中</Font>';
+ 	if(hqty == 1){
+	document.getElementById("btn10").style.color ="#FFAAAA";
+	document.getElementById("ppict").src =myurlh+'/GRP'+argp+'/'+arnb+'/'+arfl;
+//	durl="<font size=-2>"+myurlh+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG</Font>';
+	}
+	if(hqty == 2){	
+	document.getElementById("btn10").style.color ="#000000";
+	document.getElementById("ppict").src =myurlo+'/GRP'+argp+'/'+arnb+'/'+arfl;
+//	durl="<font size=-2>"+myurld+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG</Font>'
+	}
+	if(hqty == 0){	
+	document.getElementById("btn10").style.color ="#DDDDDD";
+	document.getElementById("ppict").src =myurl+'/GRP'+argp+'/'+arnb+'/'+arfl;
+//	durl="<font size=-2>"+myurl+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG</Font>';
+	}
+//	sdurl=durl.replace('../../album/', '');
+//	document.getElementById("fnm").innerHTML =  sdurl;
+}
+//
+</script>
+	<center>
+	<span id="mtl"><font size=+0 color='#DDDDFF'><B>お気に入り写真表示</B></Font></span><BR>
+<div id="dctrl1" style="display:none;">
+<table border="0" cellspacing="0" cellpadding="0" style="background-color:transparent;"><TR bgcolor='#555565'>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga1' name='spict1' onclick=bdisp(0);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga2' name='spict2' onclick=bdisp(1);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga3' name='spict3' onclick=bdisp(2);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga4' name='spict4' onclick=bdisp(3);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga5' name='spict5' onclick=bdisp(4);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga6' name='spict6' onclick=bdisp(5);></TD></TR><TR>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga7' name='spict7' onclick=bdisp(6);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga8' name='spict8' onclick=bdisp(7);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga9' name='spict9' onclick=bdisp(8);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga10' name='spict10' onclick=bdisp(9);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga11' name='spict11' onclick=bdisp(10);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga12' name='spict12' onclick=bdisp(11);></TD></TR><TR>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga13' name='spict13' onclick=bdisp(12);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga14' name='spict14' onclick=bdisp(13);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga15' name='spict15' onclick=bdisp(14);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga16' name='spict16' onclick=bdisp(15);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga17' name='spict17' onclick=bdisp(16);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga18' name='spict18' onclick=bdisp(17);></TD></TR><TR>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga19' name='spict19' onclick=bdisp(18);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga20' name='spict20' onclick=bdisp(19);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga21' name='spict21' onclick=bdisp(20);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga22' name='spict22' onclick=bdisp(21);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga23' name='spict23' onclick=bdisp(22);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga24' name='spict24' onclick=bdisp(23);></TD></TR><TR>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga25' name='spict25' onclick=bdisp(24);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga26' name='spict26' onclick=bdisp(25);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga27' name='spict27' onclick=bdisp(26);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga28' name='spict28' onclick=bdisp(27);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga29' name='spict29' onclick=bdisp(28);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga30' name='spict30' onclick=bdisp(29);></TD></TR><TR>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga31' name='spict31' onclick=bdisp(30);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga32' name='spict32' onclick=bdisp(31);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga33' name='spict33' onclick=bdisp(32);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga34' name='spict34' onclick=bdisp(33);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga35' name='spict35' onclick=bdisp(34);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga36' name='spict36' onclick=bdisp(35);></TD></TR><TR>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga37' name='spict6' onclick=bdisp(36);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga38' name='spict7' onclick=bdisp(37);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga39' name='spict8' onclick=bdisp(38);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga40' name='spict9' onclick=bdisp(39);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga41' name='spict10' onclick=bdisp(40);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga42' name='spict11' onclick=bdisp(41);></TD></TR><TR>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga43' name='spict12' onclick=bdisp(42);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga44' name='spict13' onclick=bdisp(43);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga45' name='spict14' onclick=bdisp(44);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga46' name='spict15' onclick=bdisp(45);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga47' name='spict16' onclick=bdisp(46);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga48' name='spict17' onclick=bdisp(47);></TD></TR><TR>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga49' name='spict18' onclick=bdisp(48);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga50' name='spict19' onclick=bdisp(49);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga51' name='spict20' onclick=bdisp(50);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga52' name='spict21' onclick=bdisp(51);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga53' name='spict22' onclick=bdisp(52);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga54' name='spict23' onclick=bdisp(53);></TD></TR><TR>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga55' name='spict24' onclick=bdisp(54);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga56' name='spict25' onclick=bdisp(55);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga57' name='spict26' onclick=bdisp(56);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga58' name='spict27' onclick=bdisp(57);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga59' name='spict28' onclick=bdisp(58);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga60' name='spict29' onclick=bdisp(59);></TD></TR><TR>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga61' name='spict30' onclick=bdisp(60);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga62' name='spict31' onclick=bdisp(61);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga63' name='spict32' onclick=bdisp(62);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga64' name='spict33' onclick=bdisp(63);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga65' name='spict34' onclick=bdisp(64);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga66' name='spict35' onclick=bdisp(65);></TD></TR><TR>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga67' name='spict36' onclick=bdisp(66);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga68' name='spict31' onclick=bdisp(67);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga69' name='spict32' onclick=bdisp(68);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga70' name='spict33' onclick=bdisp(69);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga71' name='spict34' onclick=bdisp(70);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga72' name='spict35' onclick=bdisp(71);></TD></TR><TR>
+</TR></Table>
+</Div>
+	<div id="dctrl2" style="display:;">
+	<img name="dsppict" id="ppict" src="./album.JPG" height="220" onload="msg();"><BR>
+
+	<span id="mfn"><font size=+0 color='#AAAAAA'>File Name</Font></span> <font size=-1> / </Font>
+	<span id="tm5"><font size=-1 color='#AAAAAA'>-</Font></span><BR>
+	</div>
+
+	<span id="bango" >-</span> <font size=-1 color='#AAAAAA'>/</Font> <span id="banmax" >-</span>
+	<font color="#555555">
+	<input type="button" id="btn4" value="大" onclick="bigsize()">
+	<span id="hsize"><font size=-1 color='#DDDDDD'>220</Font></span>
+	<input type="button" id="btn4" value="小" onclick="smlsize()">
+	<input type="button" id="btn2" value="自動" onclick="auto()">
+	<input type="button" id="btn" value="一覧" onclick="disp36()">
+	<input type='button' id='btn4' value='X' onclick='window.history.go(-1);'>
+</Font>
+<div id='dctrl3' style='display:;'>
+<Table cellspacing='1' cellpadding='2' bgcolor='#444444'>
+<TR bgcolor='#555555'><TD width='4' id=1></TD><TD width='200'><span onclick='mselect(1);'><font size=-1>1. お気に入りテスト <font size=-2>(26枚)</Font></Font></span></TD></TR>
+<TR bgcolor='#555555'><TD width='4' id=2></TD><TD width='200'><span onclick='mselect(2);'><font size=-1>2. 大原英男半世紀の変化 <font size=-2>(66枚)</Font></Font></span></TD></TR>
+<TR bgcolor='#555555'><TD width='4' id=3></TD><TD width='200'><span onclick='mselect(3);'><font size=-1>3. 富美子半世紀の変化 <font size=-2>(35枚)</Font></Font></span></TD></TR>
+<TR bgcolor='#555555'><TD width='4' id=4></TD><TD width='200'><span onclick='mselect(4);'><font size=-1>4. 美帆誕生からの写真 <font size=-2>(26枚)</Font></Font></span></TD></TR>
+<TR bgcolor='#555555'><TD width='4' id=5></TD><TD width='200'><span onclick='mselect(5);'><font size=-1>5. 岡山父母の写真 <font size=-2>(32枚)</Font></Font></span></TD></TR>
+<TR bgcolor='#555555'><TD width='4' id=6></TD><TD width='200'><span onclick='mselect(6);'><font size=-1>6. 南禅寺父母の写真 <font size=-2>(40枚)</Font></Font></span></TD></TR>
+<TR bgcolor='#555555'><TD width='4' id=7></TD><TD width='200'><span onclick='mselect(7);'><font size=-1>7. 英男子供の頃の写真集 <font size=-2>(33枚)</Font></Font></span></TD></TR>
+<TR bgcolor='#555555'><TD width='4' id=8></TD><TD width='200'><span onclick='mselect(8);'><font size=-1>8. ベストショット 国内 <font size=-2>(23枚)</Font></Font></span></TD></TR>
+<TR bgcolor='#555555'><TD width='4' id=9></TD><TD width='200'><span onclick='mselect(9);'><font size=-1>9. ベストショット 海外 <font size=-2>(33枚)</Font></Font></span></TD></TR>
+<TR bgcolor='#555555'><TD width='4' id=10></TD><TD width='200'><span onclick='mselect(10);'><font size=-1>!0. 予備１ <font size=-2>(3枚)</Font></Font></span></TD></TR>
+<TR bgcolor='#555555'><TD width='4' id=11></TD><TD width='200'><span onclick='mselect(11);'><font size=-1>11. 予備２ <font size=-2>(1枚)</Font></Font></span></TD></TR>
+</Table>
+<BR>
+<font size=-1><BR>[<a href='./albSmt1.htm'><font color='#DDDDDD'>戻る</Font></a>]</Font><BR><BR>
+</Center>
+</div>
+<Div style='position:absolute; top:200px; right:1px;'>
+<img class='mozimg2' src='./yajirusi2.jpg' height='40' width='30' id='next' onclick='next();'><br>
+</Div>
+<Div style='position:absolute; top:200px; left: 1px;'>
+<img class='mozimg2' src='./yajirusi.jpg' height='40' width='30' id='next' onclick='back();'><br></Div>
+</Body>
+</html>
+<Div align='center' style='position:absolute; top:10px; right:10px; '>
+	<input type='button' id='btn3' value='全画' onclick='openImageByFullScreen(body)'>
+	</Div>
+
+	<Div align='center' style='position:absolute; top:400px; right:2px; '>
+	<input type='button' id='btn3' value='選択' onclick='menu()'><BR><BR>
+	<input type='button' id='btn10' value='HQ' onclick='qtychgb()'>
+
