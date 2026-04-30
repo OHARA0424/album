@@ -1,7 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html lang="ja">
 <head>
-<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=Shift_JIS">
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
 <meta name="robots" content="noindex,nofollow">
 <title>albSmt</title></head>
 <body topmargin="0" leftmargin="3" bgcolor="555555" text="#CCCCCC" link="#000000" vlink="#000000" onload="init();">
@@ -1097,17 +1097,19 @@ function qtset(){
 	if(hqty == 1){
 	document.getElementById("btn10").style.color ="#FFAAAA";
 //	document.getElementById("idshow1").src =myurlh+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG';
+
+	if(g > 3 ){
 var myurlh="https://ohara0424.github.io/album2/album/PCT/";
+	}else{
+var myurlh="https://ohara0424.github.io/album3/album/PCT/";
+	}
 	document.getElementById("idshow1").src =myurlh+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG';
 
 	durl="<font size=-2>"+myurlh+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG</Font>';
 	}
 	if(hqty == 2){	
 	document.getElementById("btn10").style.color ="#000000";
-//	document.getElementById("idshow1").src =myurld+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG';
-var myurld="https://ohara0424.github.io/album3/album/PCT/";
 	document.getElementById("idshow1").src =myurld+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG';
-
 	durl="<font size=-2>"+myurld+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG</Font>'
 	}
 	if(hqty == 0){	
