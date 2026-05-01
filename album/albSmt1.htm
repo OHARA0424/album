@@ -1122,6 +1122,12 @@ var myurlh="https://ohara0424.github.io/album3/album/PCT/";
    }else{
 	if(hqty == 1){
 	document.getElementById("btn10").style.color ="#FFAAAA";
+//	document.getElementById("idshow1").src =myurlh+'GRP'+rgrp+'/'+rfld+'/'+fname+'.JPG';
+	if(rgrp > 3 ){
+var myurlh="https://ohara0424.github.io/album2/album/PCT/";
+	}else{
+var myurlh="https://ohara0424.github.io/album3/album/PCT/";
+	}
 	document.getElementById("idshow1").src =myurlh+'GRP'+rgrp+'/'+rfld+'/'+fname+'.JPG';
 	durl='<font size=-2>'+myurlh+'GRP'+rgrp+'/'+rfld+'/'+fname+'.JPG'+" "+idx+'</Font>';
 	}
