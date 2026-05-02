@@ -165,7 +165,7 @@ var gpt15=['2015/07 中欧 プラチナラバ・ウイーン',];
 	mselect(2);
 	sizeset();
 	menu(); // no menu items
-	window.setTimeout(auto, 5000);
+	window.setTimeout(auto, 3000);
 }
 //
 	function mselect(nm){
@@ -283,7 +283,7 @@ function auto() {
 	if(autost == 0){
 	autost=1;
 	next();
-	read = setInterval("next();time=0;",5000);
+	read = setInterval("next();time=0;",3000);
 	document.getElementById("btn2").style.color ="#FF7777";
 time=0;
 display();
