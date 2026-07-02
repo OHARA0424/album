@@ -882,6 +882,11 @@ document.getElementById("albcmt").innerHTML ="";
 	document.getElementById("idshow1").src ='/Edrv/HD2T-NET/public_html/ORG/'+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG';
 	}
 	if(hqty == 0){
+	if(g > 3 ){
+var myurl="https://ohara0424.github.io/album2/album/PCT/";
+	}else{
+var myurl="https://ohara0424.github.io/album3/album/PCT/";
+	}
 	document.getElementById("idshow2").src =myurl+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG';
 	document.getElementById("idshow1").src =myurl+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG';
 	}
@@ -921,6 +926,11 @@ document.getElementById("albcmt").innerHTML ="";
 	document.getElementById("idshow1").src ='/Edrv/HD2T-NET/public_html/ORG/'+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG';
 	}
 	if(hqty == 0){
+	if(g > 3 ){
+var myurl="https://ohara0424.github.io/album2/album/PCT/";
+	}else{
+var myurl="https://ohara0424.github.io/album3/album/PCT/";
+	}
 	document.getElementById("idshow2").src =myurl+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG';
 	document.getElementById("idshow1").src =myurl+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG';
 	}
@@ -1199,17 +1209,17 @@ function qtychgb() {
 	if(hqty == 0){
 	document.getElementById("btn10").style.color ="#FFAAAA";
 	hqtmp=1;
+	if(g > 3 ){
+var myurlh="https://ohara0424.github.io/album2/album/PCT/";
+	}else{
+var myurlh="https://ohara0424.github.io/album3/album/PCT/";
+	}
 	document.getElementById("idshow2").src =myurlh+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG';
 	document.getElementById("idshow1").src =myurlh+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG';
 	}
 	if(hqty == 1){	
 	document.getElementById("btn10").style.color ="#000000";
 	hqtmp=2;
-	if(g > 3 ){
-var myurlh="https://ohara0424.github.io/album2/album/PCT/";
-	}else{
-var myurlh="https://ohara0424.github.io/album3/album/PCT/";
-	}
 	document.getElementById("idshow2").src =myurlh+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG';
 	document.getElementById("idshow1").src =myurlh+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG';
 	}
