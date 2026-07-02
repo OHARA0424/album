@@ -1307,7 +1307,13 @@ var myurlh="https://ohara0424.github.io/album3/album/PCT/";
 	document.getElementById("idshow1").src =myurld+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG';
 	durl="<font size=-2>"+myurld+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG</Font>'
 	}
-	if(hqty == 0){	
+	if(hqty == 0){
+	if(g > 3 ){
+var myurl="../../album2/album/PCT/";
+	}else{
+var myurl="../../album3/album/PCT/";
+	}
+	
 	document.getElementById("btn10").style.color ="#DDDDDD";
 	document.getElementById("idshow1").src =myurl+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG';
 	durl="<font size=-2>"+myurl+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG</Font>';
@@ -1325,7 +1331,13 @@ var myurlh="https://ohara0424.github.io/album3/album/PCT/";
 	document.getElementById("idshow1").src =myurld+'GRP'+rgrp+'/'+rfld+'/'+fname+'.JPG';
 	durl='<font size=-2>'+myurld+'GRP'+rgrp+'/'+rfld+'/'+fname+'.JPG'+" "+idx+'</Font>';
 	}
-	if(hqty == 0){	
+	if(hqty == 0){
+	if(g > 3 ){
+var myurl="../../album2/album/PCT/";
+	}else{
+var myurl="../../album3/album/PCT/";
+	}
+	
 	document.getElementById("btn10").style.color ="#DDDDDD";
 	document.getElementById("idshow1").src =myurl+'GRP'+rgrp+'/'+rfld+'/'+fname+'.JPG';
 	durl='<font size=-2>'+myurl+'GRP'+rgrp+'/'+rfld+'/'+fname+'.JPG'+" "+idx+'</Font>';
