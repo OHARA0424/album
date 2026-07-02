@@ -1297,7 +1297,12 @@ function qtset(){
 	if(hqty == 1){
 	document.getElementById("btn10").style.color ="#FFAAAA";
 //	document.getElementById("idshow1").src =myurlh+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG';
-var myurlh="https://ohara0424.github.io/album3/album/PCT/";
+	if(hqty == 0){
+	if(g > 3 ){
+var myurl="../../album2/album/PCT/";
+	}else{
+var myurl="../../album3/album/PCT/";
+	}
 	document.getElementById("idshow1").src =myurlh+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG';
 
 	durl="<font size=-2>"+myurlh+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG</Font>';
