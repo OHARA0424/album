@@ -490,7 +490,13 @@ function qtset(){
 	document.getElementById("ppict").src =myurlo+'/GRP'+argp+'/'+arnb+'/'+arfl;
 //	durl="<font size=-2>"+myurld+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG</Font>'
 	}
-	if(hqty == 0){	
+	if(hqty == 0){
+	
+	if(g > 3 ){
+var myurl="../../album2/album/PCT/";
+	}else{
+var myurl="../../album3/album/PCT/";
+	}
 	document.getElementById("btn10").style.color ="#DDDDDD";
 	document.getElementById("ppict").src =myurl+'/GRP'+argp+'/'+arnb+'/'+arfl;
 //	durl="<font size=-2>"+myurl+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG</Font>';
