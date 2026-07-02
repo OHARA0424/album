@@ -1297,11 +1297,11 @@ function qtset(){
 	if(hqty == 1){
 	document.getElementById("btn10").style.color ="#FFAAAA";
 //	document.getElementById("idshow1").src =myurlh+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG';
-	if(hqty == 0){
+
 	if(g > 3 ){
-var myurl="../../album2/album/PCT/";
+var myurlh="../../album2/album/PCT/";
 	}else{
-var myurl="../../album3/album/PCT/";
+var myurlh="../../album3/album/PCT/";
 	}
 	document.getElementById("idshow1").src =myurlh+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG';
 
@@ -1312,13 +1312,7 @@ var myurl="../../album3/album/PCT/";
 	document.getElementById("idshow1").src =myurld+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG';
 	durl="<font size=-2>"+myurld+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG</Font>'
 	}
-	if(hqty == 0){
-	if(g > 3 ){
-var myurl="../../album2/album/PCT/";
-	}else{
-var myurl="../../album3/album/PCT/";
-	}
-	
+	if(hqty == 0){	
 	document.getElementById("btn10").style.color ="#DDDDDD";
 	document.getElementById("idshow1").src =myurl+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG';
 	durl="<font size=-2>"+myurl+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG</Font>';
@@ -1327,6 +1321,12 @@ var myurl="../../album3/album/PCT/";
 	document.getElementById("fnm").innerHTML =  sdurl;
    }else{
 	if(hqty == 1){
+	if(g > 3 ){
+var myurlh="../../album2/album/PCT/";
+	}else{
+var myurlh="../../album3/album/PCT/";
+	}
+
 	document.getElementById("btn10").style.color ="#FFAAAA";
 	document.getElementById("idshow1").src =myurlh+'GRP'+rgrp+'/'+rfld+'/'+fname+'.JPG';
 	durl='<font size=-2>'+myurlh+'GRP'+rgrp+'/'+rfld+'/'+fname+'.JPG'+" "+idx+'</Font>';
@@ -1337,11 +1337,6 @@ var myurl="../../album3/album/PCT/";
 	durl='<font size=-2>'+myurld+'GRP'+rgrp+'/'+rfld+'/'+fname+'.JPG'+" "+idx+'</Font>';
 	}
 	if(hqty == 0){
-	if(g > 3 ){
-var myurl="../../album2/album/PCT/";
-	}else{
-var myurl="../../album3/album/PCT/";
-	}
 	
 	document.getElementById("btn10").style.color ="#DDDDDD";
 	document.getElementById("idshow1").src =myurl+'GRP'+rgrp+'/'+rfld+'/'+fname+'.JPG';
