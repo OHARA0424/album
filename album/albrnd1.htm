@@ -794,6 +794,12 @@ function Ssize(){
 	document.getElementById(grpm).style.background ="#880000";
       document.getElementById("expls").style.display = "none";
 	explbt=0;
+	if(g > 3 ){
+var myurly="../album2/album/PCT/";
+	}else{
+var myurly="../album3/album/PCT/";
+	}
+
 	document.getElementById("idshow2").src =myurly+'album.JPG';
 	document.getElementById("idshow1").src =myurly+'album.JPG';
        document.getElementById("mpict").style.display = "none";
@@ -833,6 +839,11 @@ document.getElementById("albcmt").innerHTML ="";
 	document.getElementById("idshow1").src ='/Edrv/HD2T-NET/public_html/ORG/'+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG';
 	}
 	if(hqty == 0){
+	if(g > 3 ){
+var myurl="../album2/album/PCT/";
+	}else{
+var myurl="../album3/album/PCT/";
+	}
 	document.getElementById("idshow2").src =myurl+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG';
 	document.getElementById("idshow1").src =myurl+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG';
 	}
@@ -883,9 +894,9 @@ document.getElementById("albcmt").innerHTML ="";
 	}
 	if(hqty == 0){
 	if(g > 3 ){
-var myurl="https://ohara0424.github.io/album2/album/PCT/";
+var myurl="../album2/album/PCT/";
 	}else{
-var myurl="https://ohara0424.github.io/album3/album/PCT/";
+var myurl="../album3/album/PCT/";
 	}
 	document.getElementById("idshow2").src =myurl+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG';
 	document.getElementById("idshow1").src =myurl+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG';
@@ -927,9 +938,9 @@ var myurl="https://ohara0424.github.io/album3/album/PCT/";
 	}
 	if(hqty == 0){
 	if(g > 3 ){
-var myurl="https://ohara0424.github.io/album2/album/PCT/";
+var myurl="../album2/album/PCT/";
 	}else{
-var myurl="https://ohara0424.github.io/album3/album/PCT/";
+var myurl="../album3/album/PCT/";
 	}
 	document.getElementById("idshow2").src =myurl+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG';
 	document.getElementById("idshow1").src =myurl+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG';
@@ -1000,9 +1011,21 @@ function change2() {
 		}
 	}else{
 	if(fdin != 1){
+	if(g > 3 ){
+var myurl="../album2/album/PCT/";
+	}else{
+var myurl="../album3/album/PCT/";
+	}
+
 		document.getElementById("idshow1").src = myurl+picts[r];
 		document.getElementById("idshow2").src = myurl+picts[r];
 		}else{
+	if(g > 3 ){
+var myurl="../album2/album/PCT/";
+	}else{
+var myurl="../album3/album/PCT/";
+	}
+
 			if (myflg == 0){
 			document.getElementById("idshow1").src = myurl+picts[r];		// 次の画像をセットする
 			document.getElementById("idshow1").className = "fadein";		// フェードイン
@@ -1068,9 +1091,21 @@ function change2() {
 		}
 	}else{
 	if(fdin != 1){
+	if(g > 3 ){
+var myurl="../album2/album/PCT/";
+	}else{
+var myurl="../album3/album/PCT/";
+	}
+
 		document.getElementById("idshow1").src = myurl+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG';
 		document.getElementById("idshow2").src = myurl+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG';
 		}else{
+	if(g > 3 ){
+var myurl="../album2/album/PCT/";
+	}else{
+var myurl="../album3/album/PCT/";
+	}
+
 			if (myflg == 0){
 			document.getElementById("idshow1").src = myurl+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG';		// 次の画像をセットする
 			document.getElementById("idshow1").className = "fadein";		// フェードイン
@@ -1192,6 +1227,12 @@ function bdisp(bbb){
 	document.getElementById("idshow1").src ='/Edrv/HD2T-NET/public_html/ORG/'+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG';
 	}
 	if(hqty == 0){
+	if(g > 3 ){
+var myurl="../album2/album/PCT/";
+	}else{
+var myurl="../album3/album/PCT/";
+	}
+
 	document.getElementById("idshow2").src =myurl+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG';
 	document.getElementById("idshow1").src =myurl+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG';
 	}
@@ -1209,11 +1250,6 @@ function qtychgb() {
 	if(hqty == 0){
 	document.getElementById("btn10").style.color ="#FFAAAA";
 	hqtmp=1;
-	if(g > 3 ){
-var myurlh="https://ohara0424.github.io/album2/album/PCT/";
-	}else{
-var myurlh="https://ohara0424.github.io/album3/album/PCT/";
-	}
 	document.getElementById("idshow2").src =myurlh+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG';
 	document.getElementById("idshow1").src =myurlh+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG';
 	}
@@ -1226,6 +1262,12 @@ var myurlh="https://ohara0424.github.io/album3/album/PCT/";
 	if(hqty == 2){	
 	document.getElementById("btn10").style.color ="#DDDDDD";
 	hqtmp=0;
+	if(g > 3 ){
+var myurl="../album2/album/PCT/";
+	}else{
+var myurl="../album3/album/PCT/";
+	}
+
 	document.getElementById("idshow2").src =myurl+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG';
 	document.getElementById("idshow1").src =myurl+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG';
 	}
