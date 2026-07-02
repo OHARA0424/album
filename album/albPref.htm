@@ -481,6 +481,12 @@ function qtset(){
 //	strtm = new Date();
 //	document.getElementById("rdtime").innerHTML =' <font color=#DDDDDD>読込中</Font>';
  	if(hqty == 1){
+	if(g > 3 ){
+var myurlh="../../album2/album/PCT/";
+	}else{
+var myurlh="../../album3/album/PCT/";
+	}
+
 	document.getElementById("btn10").style.color ="#FFAAAA";
 	document.getElementById("ppict").src =myurlh+'/GRP'+argp+'/'+arnb+'/'+arfl;
 //	durl="<font size=-2>"+myurlh+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG</Font>';
@@ -491,12 +497,6 @@ function qtset(){
 //	durl="<font size=-2>"+myurld+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG</Font>'
 	}
 	if(hqty == 0){
-	
-	if(g > 3 ){
-var myurl="../../album2/album/PCT/";
-	}else{
-var myurl="../../album3/album/PCT/";
-	}
 	document.getElementById("btn10").style.color ="#DDDDDD";
 	document.getElementById("ppict").src =myurl+'/GRP'+argp+'/'+arnb+'/'+arfl;
 //	durl="<font size=-2>"+myurl+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG</Font>';
