@@ -1296,6 +1296,11 @@ function qtset(){
 	document.getElementById("rdtime").innerHTML =' <font color=#DDDDDD>読込中</Font>';
    if(autost2 == 0){
 	if(hqty == 1){
+	if(g > 3 ){
+var myurlh="../../album2/album/PCT/";
+	}else{
+var myurlh="../../album3/album/PCT/";
+	}
 	document.getElementById("btn10").style.color ="#FFAAAA";
 	document.getElementById("idshow1").src =myurlh+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG';
 	durl="<font size=-2>"+myurlh+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG</Font>';
@@ -1314,6 +1319,11 @@ function qtset(){
 	document.getElementById("fnm").innerHTML =  sdurl;
    }else{
 	if(hqty == 1){
+	if(g > 3 ){
+var myurlh="../../album2/album/PCT/";
+	}else{
+var myurlh="../../album3/album/PCT/";
+	}
 	document.getElementById("btn10").style.color ="#FFAAAA";
 	document.getElementById("idshow1").src =myurlh+'GRP'+rgrp+'/'+rfld+'/'+fname+'.JPG';
 	durl='<font size=-2>'+myurlh+'GRP'+rgrp+'/'+rfld+'/'+fname+'.JPG'+" "+idx+'</Font>';
