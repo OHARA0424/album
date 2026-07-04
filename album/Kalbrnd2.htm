@@ -1246,6 +1246,12 @@ document.getElementById("albcmt").innerHTML ="";
 	nnn3 = ( '000' + nnn ).slice( -3 );
 	strtm = new Date();
 	if(hqty == 1){
+	if(g > 3 ){
+var myurlh="../../album2/album/PCT/";
+	}else{
+var myurlh="../../album3/album/PCT/";
+	}
+
 	document.getElementById("idshow2").src =myurlh+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG';
 	document.getElementById("idshow1").src =myurlh+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG';
 	}
@@ -1447,6 +1453,12 @@ function change2() {
 	qtset();
 	}else{
 		if(hqty == 1 || hqty == 2){
+	if(g > 3 ){
+var myurlh="../../album2/album/PCT/";
+	}else{
+var myurlh="../../album3/album/PCT/";
+	}
+
 			if (myflg == 0){
 			document.getElementById("idshow1").src = myurlh+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG';		// 次の画像をセットする
 			document.getElementById("idshow1").className = "fadein";		// フェードイン
@@ -1584,6 +1596,12 @@ function qtychgb() {
 // 画質セット
 function qtset(){
 	if(hqty == 1){
+	if(g > 3 ){
+var myurlh="../../album2/album/PCT/";
+	}else{
+var myurlh="../../album3/album/PCT/";
+	}
+
 	document.getElementById("btn10").style.color ="#FFAAAA";
 	document.getElementById("idshow2").src =myurlh+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG';
 	document.getElementById("idshow1").src =myurlh+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG';
