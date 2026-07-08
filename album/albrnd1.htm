@@ -1051,6 +1051,15 @@ function rands() {
 function change2() {
 	if(r >= 120){r = 0;}
 	strtm = new Date();
+
+	var extgrp = picts[r];
+	g = extgrp.slice(3, 4)
+	if(g > 3 ){
+var myurlh="../../album2/album/PCT/";
+	}else{
+var myurlh="../../album3/album/PCT/";
+	}
+
 	if(fdin != 1){
 		if(hqty == 1){
 			document.getElementById("idshow2").src =myurlh+picts[r];
