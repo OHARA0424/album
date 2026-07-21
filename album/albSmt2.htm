@@ -17,6 +17,7 @@
 	.resizeimage img { height: 85%; }
 	::-webkit-scrollbar { width: 10px; height: 10px;}
 	::-webkit-scrollbar-thumb {  border-radius: 30px;  background: #444444;}
+	div {display:inline;}
 	</style>
 <style type="text/css">
 	.mozimg1  {
@@ -1212,6 +1213,7 @@ function nexttl(){
 	document.getElementById("Tl3").src =myurld+'GRP'+grop+'/'+dnmb2+'/'+fname+'.JPG';
 	fname =eval(Gindex)[3];
 	document.getElementById("Tl4").src =myurld+'GRP'+grop+'/'+dnmb2+'/'+fname+'.JPG';
+
 //
 	var nb=5;
 	var hnmb=0;
@@ -1296,12 +1298,11 @@ function qtset(){
 	document.getElementById("rdtime").innerHTML =' <font color=#DDDDDD>読込中</Font>';
    if(autost2 == 0){
 	if(hqty == 1){
-	if(g > 3 ){
-var myurlh="../../album2/album/PCT/";
-	}else{
-var myurlh="../../album3/album/PCT/";
-	}
-
+		if(g > 3 ){
+		var myurlh="../../album2/album/PCT/";
+		}else{
+		var myurlh="../../album3/album/PCT/";
+		}
 	document.getElementById("btn10").style.color ="#FFAAAA";
 	document.getElementById("idshow1").src =myurlh+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG';
 	durl="<font size=-2>"+myurlh+'GRP'+g+'/'+nnn3+'/'+artmp[i]+'.JPG</Font>';
@@ -1320,12 +1321,11 @@ var myurlh="../../album3/album/PCT/";
 	document.getElementById("fnm").innerHTML =  sdurl;
    }else{
 	if(hqty == 1){
-	if(g > 3 ){
-var myurlh="../../album2/album/PCT/";
-	}else{
-var myurlh="../../album3/album/PCT/";
-	}
-
+		if(g > 3 ){
+		var myurlh="../../album2/album/PCT/";
+		}else{
+		var myurlh="../../album3/album/PCT/";
+		}
 	document.getElementById("btn10").style.color ="#FFAAAA";
 	document.getElementById("idshow1").src =myurlh+'GRP'+rgrp+'/'+rfld+'/'+fname+'.JPG';
 	durl='<font size=-2>'+myurlh+'GRP'+rgrp+'/'+rfld+'/'+fname+'.JPG'+" "+idx+'</Font>';
@@ -1379,6 +1379,13 @@ function tenoff(){
 	clearTimeout(ten);
 	document.getElementById("btn3T").value ="選択";
 	document.getElementById("btn3T").style.color ="#DDDDDD";
+}
+//
+// Group S display
+function gsdsp(){
+	if(hqty == 2){
+	document.getElementById("grsd").style.display = "";
+	}
 }	
 //
 //-->
@@ -1394,13 +1401,13 @@ function tenoff(){
 	</Div>
 
 	<BR>
-	<img name="exp1" id="idshow1" class="mono"  src="./album.JPG" height="1" onload="msg();"><BR>
+	<img name="exp1" id="idshow1" class="mono"  src="./album.jpg" height="1" onload="msg();"><BR>
 	<div id="yaji" style="display:none;">
 <table border="0" cellspacing="1" cellpadding="0" style="background-color:transparent;"><TR bgcolor='#555565'>
-<TD align="center"><img src='./album.JPG' height='80' border='0' id='Tl1' onclick='sentaku();'></TD>
-<TD align="center"><img src='./album.JPG' height='80' border='0' id='Tl2' onclick='sentaku();'></TD></TR><TR>
-<TD align="center"><img src='./album.JPG' height='80' border='0' id='Tl3' onclick='sentaku();'></TD>
-<TD align="center"><img src='./album.JPG' height='80' border='0' id='Tl4' onclick='sentaku();'></TD></TR>
+<TD align="center"><img src='./album.jpg' height='80' border='0' id='Tl1' onclick='sentaku();'></TD>
+<TD align="center"><img src='./album.jpg' height='80' border='0' id='Tl2' onclick='sentaku();'></TD></TR><TR>
+<TD align="center"><img src='./album.jpg' height='80' border='0' id='Tl3' onclick='sentaku();'></TD>
+<TD align="center"><img src='./album.jpg' height='80' border='0' id='Tl4' onclick='sentaku();'></TD></TR>
 </Table>
 
 	<div align='center' style='position:fixed; top:150px; right:0px;left:0px; '>
@@ -1435,7 +1442,7 @@ function tenoff(){
 <a href='#' onclick='mdisp("E",4);'><button type='button' id='M4' style='WIDTH: 30px; HEIGHT:30px; font-size:13px; padding: 0px; background-color:#777722; color:#EEEEEE; border:1px solid #333333; border-radius: 3px;'>GE</button></a>/
 <a href='#' onclick='mdisp("F",5);'><button type='button' id='M5' style='WIDTH: 30px; HEIGHT:30px; font-size:13px; padding: 0px; background-color:#777722; color:#EEEEEE; border:1px solid #333333; border-radius: 3px;'>GF</button></a>/
 <a href='#' onclick='mdisp("G",6);'><button type='button' id='M6' style='WIDTH: 30px; HEIGHT:30px; font-size:13px; padding: 0px; background-color:#777722; color:#EEEEEE; border:1px solid #333333; border-radius: 3px;'>GG</button></a>/
-	
+	<BR>
 	<Div align='center' style='position:absolute; top:20px; left:50%; transform:translateX(-50%); '>
 	<div id="cmts" style="display:none;">
 	<iframe name="cmtw" MARGINWIDTH="0" MARGINHEIGHT="0" scrolling="no" frameborder="0" style="border:none" 
@@ -1457,42 +1464,42 @@ function tenoff(){
 <div id="hoge1" style="display:none;">
 <Div id="mvp" align='center' style='position:absolute; top:300px; left:0px; right:0px;'>
 <table border="0" cellspacing="0" cellpadding="0" style="background-color:transparent;"><TR bgcolor='#555565'>
-<TD align="center"><img src='./album.JPG' height='100' widtn='150' border='0' id='Ga1' name='spict1' onclick=bdisp(0);></TD>
-<TD align="center"><img src='./album.JPG' height='100' widtn='150' border='0' id='Ga2' name='spict2' onclick=bdisp(1);></TD>
-<TD align="center"><img src='./album.JPG' height='100' widtn='150' border='0' id='Ga3' name='spict3' onclick=bdisp(2);></TD>
-<TD align="center"><img src='./album.JPG' height='100' widtn='150' border='0' id='Ga4' name='spict4' onclick=bdisp(3);></TD>
-<TD align="center"><img src='./album.JPG' height='100' widtn='150' border='0' id='Ga5' name='spict5' onclick=bdisp(4);></TD>
-<TD align="center"><img src='./album.JPG' height='100' widtn='150' border='0' id='Ga6' name='spict6' onclick=bdisp(5);></TD></TR><TR>
-<TD align="center"><img src='./album.JPG' height='100' widtn='150' border='0' id='Ga7' name='spict7' onclick=bdisp(6);></TD>
-<TD align="center"><img src='./album.JPG' height='100' widtn='150' border='0' id='Ga8' name='spict8' onclick=bdisp(7);></TD>
-<TD align="center"><img src='./album.JPG' height='100' widtn='150' border='0' id='Ga9' name='spict9' onclick=bdisp(8);></TD>
-<TD align="center"><img src='./album.JPG' height='100' widtn='150' border='0' id='Ga10' name='spict10' onclick=bdisp(9);></TD>
-<TD align="center"><img src='./album.JPG' height='100' widtn='150' border='0' id='Ga11' name='spict11' onclick=bdisp(10);></TD>
-<TD align="center"><img src='./album.JPG' height='100' widtn='150' border='0' id='Ga12' name='spict12' onclick=bdisp(11);></TD></TR><TR>
-<TD align="center"><img src='./album.JPG' height='100' widtn='150' border='0' id='Ga13' name='spict13' onclick=bdisp(12);></TD>
-<TD align="center"><img src='./album.JPG' height='100' widtn='150' border='0' id='Ga14' name='spict14' onclick=bdisp(13);></TD>
-<TD align="center"><img src='./album.JPG' height='100' widtn='150' border='0' id='Ga15' name='spict15' onclick=bdisp(14);></TD>
-<TD align="center"><img src='./album.JPG' height='100' widtn='150' border='0' id='Ga16' name='spict16' onclick=bdisp(15);></TD>
-<TD align="center"><img src='./album.JPG' height='100' widtn='150' border='0' id='Ga17' name='spict17' onclick=bdisp(16);></TD>
-<TD align="center"><img src='./album.JPG' height='100' widtn='150' border='0' id='Ga18' name='spict18' onclick=bdisp(17);></TD></TR><TR>
-<TD align="center"><img src='./album.JPG' height='100' widtn='150' border='0' id='Ga19' name='spict19' onclick=bdisp(18);></TD>
-<TD align="center"><img src='./album.JPG' height='100' widtn='150' border='0' id='Ga20' name='spict20' onclick=bdisp(19);></TD>
-<TD align="center"><img src='./album.JPG' height='100' widtn='150' border='0' id='Ga21' name='spict21' onclick=bdisp(20);></TD>
-<TD align="center"><img src='./album.JPG' height='100' widtn='150' border='0' id='Ga22' name='spict22' onclick=bdisp(21);></TD>
-<TD align="center"><img src='./album.JPG' height='100' widtn='150' border='0' id='Ga23' name='spict23' onclick=bdisp(22);></TD>
-<TD align="center"><img src='./album.JPG' height='100' widtn='150' border='0' id='Ga24' name='spict24' onclick=bdisp(23);></TD></TR><TR>
-<TD align="center"><img src='./album.JPG' height='100' widtn='150' border='0' id='Ga25' name='spict25' onclick=bdisp(24);></TD>
-<TD align="center"><img src='./album.JPG' height='100' widtn='150' border='0' id='Ga26' name='spict26' onclick=bdisp(25);></TD>
-<TD align="center"><img src='./album.JPG' height='100' widtn='150' border='0' id='Ga27' name='spict27' onclick=bdisp(26);></TD>
-<TD align="center"><img src='./album.JPG' height='100' widtn='150' border='0' id='Ga28' name='spict28' onclick=bdisp(27);></TD>
-<TD align="center"><img src='./album.JPG' height='100' widtn='150' border='0' id='Ga29' name='spict29' onclick=bdisp(28);></TD>
-<TD align="center"><img src='./album.JPG' height='100' widtn='150' border='0' id='Ga30' name='spict30' onclick=bdisp(29);></TD></TR><TR>
-<TD align="center"><img src='./album.JPG' height='100' widtn='150' border='0' id='Ga31' name='spict31' onclick=bdisp(30);></TD>
-<TD align="center"><img src='./album.JPG' height='100' widtn='150' border='0' id='Ga32' name='spict32' onclick=bdisp(31);></TD>
-<TD align="center"><img src='./album.JPG' height='100' widtn='150' border='0' id='Ga33' name='spict33' onclick=bdisp(32);></TD>
-<TD align="center"><img src='./album.JPG' height='100' widtn='150' border='0' id='Ga34' name='spict34' onclick=bdisp(33);></TD>
-<TD align="center"><img src='./album.JPG' height='100' widtn='150' border='0' id='Ga35' name='spict35' onclick=bdisp(34);></TD>
-<TD align="center"><img src='./album.JPG' height='100' widtn='150' border='0' id='Ga36' name='spict36' onclick=bdisp(35);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga1' name='spict1' onclick=bdisp(0);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga2' name='spict2' onclick=bdisp(1);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga3' name='spict3' onclick=bdisp(2);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga4' name='spict4' onclick=bdisp(3);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga5' name='spict5' onclick=bdisp(4);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga6' name='spict6' onclick=bdisp(5);></TD></TR><TR>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga7' name='spict7' onclick=bdisp(6);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga8' name='spict8' onclick=bdisp(7);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga9' name='spict9' onclick=bdisp(8);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga10' name='spict10' onclick=bdisp(9);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga11' name='spict11' onclick=bdisp(10);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga12' name='spict12' onclick=bdisp(11);></TD></TR><TR>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga13' name='spict13' onclick=bdisp(12);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga14' name='spict14' onclick=bdisp(13);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga15' name='spict15' onclick=bdisp(14);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga16' name='spict16' onclick=bdisp(15);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga17' name='spict17' onclick=bdisp(16);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga18' name='spict18' onclick=bdisp(17);></TD></TR><TR>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga19' name='spict19' onclick=bdisp(18);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga20' name='spict20' onclick=bdisp(19);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga21' name='spict21' onclick=bdisp(20);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga22' name='spict22' onclick=bdisp(21);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga23' name='spict23' onclick=bdisp(22);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga24' name='spict24' onclick=bdisp(23);></TD></TR><TR>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga25' name='spict25' onclick=bdisp(24);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga26' name='spict26' onclick=bdisp(25);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga27' name='spict27' onclick=bdisp(26);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga28' name='spict28' onclick=bdisp(27);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga29' name='spict29' onclick=bdisp(28);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga30' name='spict30' onclick=bdisp(29);></TD></TR><TR>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga31' name='spict31' onclick=bdisp(30);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga32' name='spict32' onclick=bdisp(31);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga33' name='spict33' onclick=bdisp(32);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga34' name='spict34' onclick=bdisp(33);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga35' name='spict35' onclick=bdisp(34);></TD>
+<TD align="center"><img src='./album.jpg' height='100' widtn='150' border='0' id='Ga36' name='spict36' onclick=bdisp(35);></TD>
 </TR></Table>
 </Div>
 </Div>
@@ -3393,7 +3400,7 @@ function tenoff(){
 </DIV>
 <a href='../mv/moviegdrv.htm'><font size=-1 color='#999999'>[ 動画へ(G.Drive) ]</Font></a>
  / <a href='./albPref.htm'><input type='button' id='btn2' value='Pref'></a>
- / <a href='./albSmt1S.htm'><input type='button' id='btn2' value='S'></a> 
+ / <input type='button' id='btn2' value='S' onclick='gsdsp();'> 
 <a href='./albSmt1.htm'><input type='button' id='btn2' value='g07'></a>
 <BR><font color='#AA7777'> 2025/04/13版</Font><BR></Center>
 <Div style='position:absolute; top:150px; right:1px;'>
